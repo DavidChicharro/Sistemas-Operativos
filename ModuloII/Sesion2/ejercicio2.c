@@ -1,6 +1,6 @@
 /*
 ejercicio2.c
-Compilación: gcc -o ejercicio ejercicio2.c
+Compilación: gcc -o ejercicio2 ejercicio2.c
 
  Realiza un programa en C utilizando las llamadas al sistema 
 necesarias que acepte como entrada:
