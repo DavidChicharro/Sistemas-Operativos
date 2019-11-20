@@ -66,7 +66,7 @@ int main(int argc, char *argv[]){
 	//CAMBIO DE PERMISOS
 	if(stat("archivo1",&atributos) < 0) {
 		printf("\nError al intentar acceder a los atributos de archivo1");
-		perror("\nError en lstat");
+		perror("\nError en stat");
 		exit(EXIT_FAILURE);
 	}
 
@@ -86,7 +86,7 @@ int main(int argc, char *argv[]){
 		perror("\nError en chmod para archivo1");
 		exit(EXIT_FAILURE);
 	}
-	
+
 	/*
 	 * Cambia los permisos del archivo con OR lógicos: 700|040|020|004
 	 * Pasa de tener los permisos 000-111-000 a 111-110-100
