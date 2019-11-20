@@ -27,7 +27,7 @@ int main(int argc, char *argv[]){
 
 	/*
 	 * Crea un archivo, "archivo1", con permisos r-x para el grupo
-	 *	¿Por qué r-x si establecemos	S_IRGRP|S_IWGRP|S_IXGRP?
+	 * ¿Por qué r-x si establecemos	S_IRGRP|S_IWGRP|S_IXGRP?
 	 * En octal = 040|020|010 = 070 --> binario = 000-111-000
 	 * Como umask=0022 -> 070&(¬0022)=050 -> 000-101-000 = r-x
 	 */
