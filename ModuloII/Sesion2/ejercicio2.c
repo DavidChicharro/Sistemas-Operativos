@@ -74,7 +74,6 @@ int main(int argc, char *argv[]){
 		if( !S_ISDIR(atributos.st_mode) ){
 			if(chmod(ruta_archivo, permisos_nuevos) < 0) {
 				printf("%s : %d %o\n",ruta_archivo,errno,permisos_antiguos);
-				//perror("\nError en chmod para %d",ruta_archivo);
 				exit(EXIT_FAILURE);
 			}else{
 				printf("%s : %o %o\n",ruta_archivo,permisos_antiguos,permisos_nuevos);
