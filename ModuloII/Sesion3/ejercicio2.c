@@ -1,6 +1,6 @@
 /*
 tarea4.c
-Compilación: gcc -o tarea4 tarea4.c
+Compilación: gcc -o ejercicio2 ejercicio2.c
 
 Trabajo con llamadas al sistema del Subsistema de Procesos "POSIX 2.10 compliant"
 Prueba el programa tal y como está. Después, elimina los comentarios (1) y pruébalo de nuevo.
