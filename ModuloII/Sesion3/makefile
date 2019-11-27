@@ -13,6 +13,8 @@ all:
 	gcc -o bin/ejercicio4 ejercicio4.c
 	gcc -o bin/ejercicio5 ejercicio5.c
 	gcc -o bin/ejercicio6 ejercicio6.c
+	gcc -o bin/ejercicio7 ejercicio7.c
+	gcc -o bin/bucle bucle.c
 
 clean:
 	$(REMOVE) $(BIN)
