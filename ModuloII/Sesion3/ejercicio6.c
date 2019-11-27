@@ -1,5 +1,10 @@
-//tarea5.c
-//Trabajo con llamadas al sistema del Subsistema de Procesos conforme a POSIX 2.10
+/*
+
+ejercicio6.c
+Compilación: gcc -o ejercicio6 ejercicio6.c
+
+Trabajo con llamadas al sistema del Subsistema de Procesos conforme a POSIX 2.10
+*/
 
 #include<sys/types.h>	
 #include<sys/wait.h>	
