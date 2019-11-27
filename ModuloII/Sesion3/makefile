@@ -11,6 +11,7 @@ all:
 	gcc -o bin/tarea4_no_comment tarea4_no_comment.c
 	gcc -o bin/ejercicio3 ejercicio3.c
 	gcc -o bin/ejercicio4 ejercicio4.c
+	gcc -o bin/ejercicio5 ejercicio5.c
 	gcc -o bin/tarea5 tarea5.c
 
 clean:
