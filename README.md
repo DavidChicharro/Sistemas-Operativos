@@ -16,3 +16,8 @@ Llamadas al sistema para el Sistema de Archivos (Parte 2)
 ## Sesión 3
 
 Llamadas al sistema para el Control de Procesos
+
+
+## Sesión 4
+
+Comunicación entre procesos utilizando cauces
