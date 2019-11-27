@@ -30,10 +30,15 @@ const int NPROCS = 5;
 int main(int argc, char *argv[]){
 	int i, num_hijos = 0;
 	pid_t childpid;
+	int PIDs[NPROCS];
 	int estado;
 
+	if(setvbuf(stdout,NULL,_IONBF,0)) {
+		perror("\nError en setvbuf");
+	}
+
 	for ( i=1 ; i<=NPROCS ; i++) {
-		if ( (childpid=fork()) < 0 ) {
+		if ( (PIDs[i-1]=fork()) < 0 ) {
 			printf("Error %d al crear el hijo %d\n",errno,i);
 			perror("Error en la creación del hijo\n");
 			exit(EXIT_FAILURE);
@@ -41,16 +46,18 @@ int main(int argc, char *argv[]){
 			num_hijos++;
 
 		// si es un hijo termino
-		if (childpid == 0){
+		if (PIDs[i-1] == 0){
 			printf("Soy el hijo: %d\n", getpid());
 			exit(estado);
 		}
 	}
 
+	sleep(2);
+
 	for( i=0 ; i<NPROCS ; i++){
-		wait(&estado);
+		waitpid(PIDs[i],&estado,0);
 		num_hijos--;
-		printf("\nAcaba de finalizar el proceso %d\n", childpid);
+		printf("\nAcaba de finalizar el proceso %d\n", PIDs[i]);
 
 		if(num_hijos>0)
 			printf("Sólo me quedan %d hijos vivos\n", num_hijos);
