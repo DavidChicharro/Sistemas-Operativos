@@ -1,3 +1,12 @@
+/*
+bucle.c
+Compilación: gcc -o bucle bucle.c
+
+ Programa complementario al Ejercicio 7 para demostrar
+la ejecución en background y foreground
+
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
