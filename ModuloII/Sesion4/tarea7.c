@@ -20,7 +20,7 @@ int main(int argc, char *argv[]){
 	pipe(fd); // Llamada al sistema para crear un pipe
 
 	if ( (PID= fork())<0) {
-		perror("fork");
+		perror("Error en el fork");
 		exit(EXIT_FAILURE);
 	}
 	if(PID == 0) { // ls
