@@ -39,3 +39,8 @@ El proceso padre cierra el descriptor de escritura _fd[1]_ y lee del cauce lo qu
 **Ejercicio 3** - _tarea7.c_
 
 Programa ilustrativo del uso de pipes y la redirección de entrada y salida estándar simulando la orden: ``ls | sort``.
+
+
+**Ejercicio 4** - _tarea8.c_
+
+La ejecución de este programa realiza la misma acción que en el ejercicio anterior (``ls | sort``), pero  en lugar de realizar primero el cierre del descriptor de archivo (`close(fd)`) y después la duplicación del descriptor (`dup(fd)`), ambas órdenes se combinan en una sola: ``dup2(int oldfd, int newfd);``
