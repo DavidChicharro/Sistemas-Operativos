@@ -34,3 +34,8 @@ En primer lugar ``pipe(fd)`` crea un cauce sin nombre; al pasarle `fd` como par�
 Con la orden ``fork`` se crea un proceso hijo, el cual cierra el descriptor de lectura _fd[0]_ y posteriormente escribe un mensaje a través del cauce en el descriptor de escritura _fd[1]_.
 
 El proceso padre cierra el descriptor de escritura _fd[1]_ y lee del cauce lo que ha escrito el hijo con el descriptor de lectura _fd[0]_, imprimiendo por pantalla dicho mensaje y el número de bytes que ocupa.
+
+
+**Ejercicio 3** - _tarea7.c_
+
+Programa ilustrativo del uso de pipes y la redirección de entrada y salida estándar simulando la orden: ``ls | sort``.
