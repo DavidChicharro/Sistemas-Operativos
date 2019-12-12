@@ -44,3 +44,8 @@ Programa ilustrativo del uso de pipes y la redirección de entrada y salida est�
 **Ejercicio 4** - _tarea8.c_
 
 La ejecución de este programa realiza la misma acción que en el ejercicio anterior, ``ls | sort``, pero  en lugar de realizar primero el cierre del descriptor de archivo `close(fd)` y después la duplicación del descriptor `dup(fd)`, ambas órdenes se combinan en una sola: ``dup2(int oldfd, int newfd);``
+
+
+**Ejercicio 5** - _maestro_ej5.c & esclavo_ej5.c_
+
+Cálculo de números primos en un intervalo utilizando cauces sin nombre.
