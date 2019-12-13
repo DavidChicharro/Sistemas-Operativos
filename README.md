@@ -49,3 +49,12 @@ La ejecución de este programa realiza la misma acción que en el ejercicio ante
 **Ejercicio 5** - _maestro_ej5.c & esclavo_ej5.c_
 
 Cálculo de números primos en un intervalo utilizando cauces sin nombre.
+
+
+## Sesión 5
+
+Llamadas al sistema para gestión y control de señales
+
+**_tarea9.c_**
+
+Este programa ignora las interrupciones por teclado. Para poder interrumpirlo habría que, por ejemplo, ejecutar la orden ``kill -9 <PID>`` desde otro terminal (se puede consultar el *\<PID>* con la orden `top`).
