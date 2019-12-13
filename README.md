@@ -60,4 +60,5 @@ Llamadas al sistema para gestión y control de señales
 Este programa ignora las interrupciones por teclado `Ctrl+C`. Para poder interrumpirlo habría que, por ejemplo, ejecutar la orden ``kill -9 <PID>`` desde otro terminal (se puede consultar el *\<PID>* con la orden `top`).
 
 **_tarea10.c_**
+
 El programa establece un manejador para las señales recibidas (interrupciones de teclado `Ctrl+C`), finalizando cuando recibe tres.
