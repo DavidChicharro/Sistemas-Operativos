@@ -64,6 +64,7 @@ Este programa ignora las interrupciones por teclado `Ctrl+C`. Para poder interru
 El programa establece un manejador para las señales recibidas (interrupciones de teclado `Ctrl+C`), finalizando cuando recibe tres.
 
 **Ejercicio 1** - _envioSignal.c & reciboSignal.c_
+
 En primer lugar hay que ejecutar ``reciboSignal`` para que quede a la espera de recibir una señal en segundo plano. Después, ejecutar ``envioSignal [012] <PID>``, donde _\<PID>_ es el identificador de proceso de ``reciboSignal``, el cual se puede consultar con la orden `top`. Según la orden enviada (0, 1 ó 2), terminará el proceso o se mostrará un mensaje u otro en el terminal donde se ejecuta ``reciboSignal``; los mensajes mostrados por _1_ y _2_ se pueden configurar en en la función `static void sig_USR_hdlr(int sigNum)` de ``reciboSignal``.
 
 El funcionamiento de cada sección del código se especifica en los comentarios del mismo.
