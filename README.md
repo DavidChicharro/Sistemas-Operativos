@@ -73,3 +73,8 @@ El funcionamiento de cada sección del código se especifica en los comentarios 
 **Ejercicio 2** - _contador.c_
 
 Maneja cualquier señal recibida y muestra cuántas veces ha recibido dicha señal.
+
+
+**Ejercicio 3**
+
+Suspende la ejecución del proceso actual hasta que se reciba la señal _SIGUSR1_. Para comprobar su correcto funcionamiento ejecutar `./ejercicio3 &` y una vez obtenido su PID, ejecutar el programa _envioSignal_ del _Ejercicio 1_ para enviar la señal _SIGUSR1_: `./envioSignal 1 <PID ejercicio3>`.
