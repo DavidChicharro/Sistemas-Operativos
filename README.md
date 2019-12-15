@@ -89,3 +89,17 @@ Al igual que en el ejercicio anterior se puede enviar _SIGTERM_ ejecutando `./ta
 ## Sesión 6
 
 Control de archivos y archivos proyectados en memoria
+
+**Ejercicio 1** 
+
+Crear un archivo de texto con varias líneas con texto de prueba y ejecutar `./ejercicio1 sort "<" prueba.txt`.
+
+
+**Ejercicio 2**
+
+Ejecutar `./ejercicio2 ls "|" sort`.
+
+
+**Ejercicio 3**
+
+Con el mismo archivo de texto del _Ejercicio 1_ ejecutar el mismo programa `ejercicio3` en dos terminales distintos con la misma orden: `./ejercicio3 prueba.txt`. Esto hará que se bloquee el acceso al archivo desde el primer proceso lanzado y hasta que no se desbloquee en uno no aparecerá por pantalla en el otro terminal la línea "_Procesando el archivo prueba.txt_".
