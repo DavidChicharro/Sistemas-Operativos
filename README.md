@@ -84,3 +84,8 @@ Suspende la ejecución del proceso actual hasta que se reciba la señal _SIGUSR1
 
 El programa crea una máscara donde sólo se añade la señal _SIGTERM_. Aplica la máscara y con ello bloquea la señal _SIGTERM_. Duerme durante 10 segundos y si durante este tiempo recibe dicha señal, no reaccionará porque está bloqueada; Una vez termina de "dormir", desbloquea la señal _SIGTERM_, reanudando la máscara antigua y comprobando si la variable signal_recibida está activada, lo cual quiere decir que ha recibido la señal _SIGTERM_ mientras dormía, en cuyo caso mostrará un mensaje indicándolo; si no, no mostrará nada.
 Al igual que en el ejercicio anterior se puede enviar _SIGTERM_ ejecutando `./tarea12 &` para obtener su PID y `./envioSignal 0 <PID tarea12>` para enviar la señal _SIGTERM_.
+
+
+## Sesión 6
+
+Control de archivos y archivos proyectados en memoria
