@@ -103,3 +103,9 @@ Ejecutar `./ejercicio2 ls "|" sort`.
 **Ejercicio 3**
 
 Con el mismo archivo de texto del _Ejercicio 1_ ejecutar el mismo programa `ejercicio3` en dos terminales distintos con la misma orden: `./ejercicio3 prueba.txt`. Esto hará que se bloquee el acceso al archivo desde el primer proceso lanzado y hasta que no se desbloquee en uno no aparecerá por pantalla en el otro terminal la línea "_Procesando el archivo prueba.txt_".
+
+
+**Ejercicio 4**
+
+Ejecutar `./ejercicio4 bloq_ej4`, donde el primer argumento _bloq\_ej4_ será el nombre del archivo, que no tiene porqué existir previamente. En otro terminal ejecutar el mismo comando para comprobar que no se puede ejecutar otra instancia al estar el cerrojo establecido en la primera ejecución.
+
