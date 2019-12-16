@@ -109,3 +109,7 @@ Con el mismo archivo de texto del _Ejercicio 1_ ejecutar el mismo programa `ejer
 
 Ejecutar `./ejercicio4 bloq_ej4`, donde el primer argumento _bloq\_ej4_ será el nombre del archivo, que no tiene porqué existir previamente. En otro terminal ejecutar el mismo comando para comprobar que no se puede ejecutar otra instancia al estar el cerrojo establecido en la primera ejecución.
 
+
+**Ejercicio 5**
+
+La ejecución de este programa `./ejercicio5 <arch_orig> <arch_destino>` supone lo mismo que realizar en Linux la orden `cp <arch_orig> <arch_destino>`. El archivo de destino lo crea el programa si no existe.
