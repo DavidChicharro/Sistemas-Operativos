@@ -55,7 +55,7 @@ int main(int argc, char *argv[]){
 	}
 	else{
 		// Asigno a fich_lect la entrada estándar (teclado)
-		printf( "Utilizando la entrada estándar como entrada: ");
+		printf( "Utilizando la entrada estándar como entrada:\n");
 		fflush(stdout);
 		fich_lec=STDIN_FILENO;
 	}
